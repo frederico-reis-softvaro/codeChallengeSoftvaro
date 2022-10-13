@@ -1,9 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import PlayButton from '../utils/PlayButton.svg';
 
-const VariantAStyle = styled.div`
+export const VariantAStyle = styled.div`
 	.play-button {
 		display: flex;
 		align-self: center;
@@ -53,24 +50,3 @@ const VariantAStyle = styled.div`
 		}
 	}
 `;
-
-function VariantA(props: any) {
-  return (
-    <VariantAStyle>
-      <h1>Easily create or join a local nanny share with Hapu</h1>
-      <h2>
-        Hapu is Airbnb for nanny share. Share your home, nanny and costs
-        and create new flexible, affordable solutions in childcare.
-      </h2>
-      <Link
-        onClick={props.clickAction}
-        className="play-button"
-        to="/play"
-      >
-        <img src={PlayButton} alt="Play Button" />
-        <span>See hapu in action (27 seconds)</span>
-      </Link>
-    </VariantAStyle>
-  );
-}
-export default VariantA;

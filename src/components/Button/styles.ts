@@ -1,7 +1,6 @@
-import React from 'react';
 import styled from 'styled-components';
 
-const ButtonStyle = styled.button`
+export const ButtonStyle = styled.button`
 	height: 44px;
 	border-radius: 4px;
 	border: none;
@@ -12,12 +11,3 @@ const ButtonStyle = styled.button`
 	padding: 12px 21px;
 	cursor: pointer;
 `;
-
-function Button(props) {
-	return (
-		<ButtonStyle>
-			<h5>{props.title}</h5>
-		</ButtonStyle>
-	);
-}
-export default Button;

@@ -1,9 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import PlayButton from '../utils/PlayButton.svg';
 
-const VariantBStyle = styled.div`
+export const VariantBStyle = styled.div`
 	.play-button {
 		display: flex;
 		align-self: center;
@@ -53,25 +50,3 @@ const VariantBStyle = styled.div`
 		}
 	}
 `;
-
-function VariantB(props: any) {
-	return (
-		<VariantBStyle>
-			<h1>Create the childcare you need at a price you can afford</h1>
-			<h2>
-				Connect with other local families to share a nanny from as low
-				as $10.00/hr each. Create your family profile today to get
-				started.
-			</h2>
-			<Link
-				onClick={props.clickAction}
-				className='play-button'
-				to='/play'
-			>
-				<img src={PlayButton} alt='Play Button' />
-				<span>See hapu in action (27 seconds)</span>
-			</Link>
-		</VariantBStyle>
-	);
-}
-export default VariantB;

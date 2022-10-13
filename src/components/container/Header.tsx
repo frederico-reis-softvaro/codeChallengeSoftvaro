@@ -62,7 +62,7 @@ const HeaderStyle = styled.div`
 		.link2 {
 			display: none;
 		}
-		.link3{
+		.link3 {
 			display: none;
 		}
 	}

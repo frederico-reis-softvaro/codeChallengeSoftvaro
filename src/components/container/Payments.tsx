@@ -92,7 +92,7 @@ const PaymentStyle = styled.section`
 			margin-right: 16px;
 			margin-bottom: 64px;
 		}
-		.read-link  {
+		.read-link {
 			margin-bottom: 64px;
 		}
 	}

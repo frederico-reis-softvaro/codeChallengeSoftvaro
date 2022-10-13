@@ -16,7 +16,7 @@ const LandingPageStyle = styled.div`
 `;
 
 function LandingPage() {
-    return (
+	return (
 		<LandingPageStyle>
 			<Header />
 			<Hero />
@@ -29,7 +29,6 @@ function LandingPage() {
 			<Host />
 			<Footer />
 		</LandingPageStyle>
-
 	);
 }
 export default LandingPage;

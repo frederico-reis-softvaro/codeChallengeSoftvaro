@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import PlayButton from '../utils/PlayButton.svg';
 
-const VariantAStyle = styled.div`
+const VariantBStyle = styled.div`
 	.play-button {
 		display: flex;
 		align-self: center;
@@ -54,13 +54,14 @@ const VariantAStyle = styled.div`
 	}
 `;
 
-function VariantA(props) {
+function VariantB(props: any) {
 	return (
-		<VariantAStyle>
-			<h1>Easily create or join a local nanny share with Hapu</h1>
+		<VariantBStyle>
+			<h1>Create the childcare you need at a price you can afford</h1>
 			<h2>
-				Hapu is Airbnb for nanny share. Share your home, nanny and costs
-				and create new flexible, affordable solutions in childcare.
+				Connect with other local families to share a nanny from as low
+				as $10.00/hr each. Create your family profile today to get
+				started.
 			</h2>
 			<Link
 				onClick={props.clickAction}
@@ -70,7 +71,7 @@ function VariantA(props) {
 				<img src={PlayButton} alt='Play Button' />
 				<span>See hapu in action (27 seconds)</span>
 			</Link>
-		</VariantAStyle>
+		</VariantBStyle>
 	);
 }
-export default VariantA;
+export default VariantB;

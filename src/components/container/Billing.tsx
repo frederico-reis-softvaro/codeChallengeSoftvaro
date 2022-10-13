@@ -13,7 +13,7 @@ const BillingStyle = styled.section`
 		height: 392px;
 	}
 	@media screen and (max-width: 1000px) {
-		display:none;
+		display: none;
 	}
 `;
 
